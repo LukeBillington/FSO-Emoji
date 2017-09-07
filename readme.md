@@ -1,56 +1,30 @@
-# FSO Tools
-**UPDATED FOR FSO 4.1.** Recently Full Sail constructed a new LMS v4 to make keeping track of assignments easier.
-I had issues with the new interface in regards to it's usability leading me to create this Chrome extension.
+# FSO Emoji
+Recently I was seeing in my school's program chat that someone would be interested in Emoji icons in place of grades.
+This is a very simple Chrome extension to just that. It's not intended to be the most efficient as far as code goes, but it works.
 
-**Screenshots can be seen further below.**
+**PLEASE NOTE: This extension is not yet compatible with my FSO Tools extension and is designed for students in bachelor's degree programs only.**
 
-## What it does
-+ **Separates modules from activities.** Groups and colors assignments under modules and adds spacing between modules.
-+ **Highlights today's assignments.** All assignments marked as due today will be highlighted.
-+ **Adds a dark mode.** Toggle this by pressing the FSO Tools icon next to the address bar.
-
-## How to update
-If you have already installed FSO Tools for a previous version, follow these steps.
-Otherwise, if you haven't installed FSO Tools before, see the How to install section below.
-
-1. Download or clone this repository.
-2. Remove the old version of this extension off of your machine.
-3. Replace the new version in the same location as the old version was previously.
-4. In Chrome, visit [chrome://extensions](chrome://extensions).
-5. Refresh the page, make sure you see that the current version number – next to the FSO Tools title – reads 1.1 instead of 1.0.
-6. Open FSO in Chrome to see the applied changes.
-
-If you are unable to update FSO Tools with these steps, remove the extension from the page and then load it in again like steps 5 and 6 below.
-
+**Screenshot can be seen further below.**
 
 ## How to install
 1. Download or clone this repository.
-2. Move the FSO Tools folder to a safe location on your computer.
+2. Move the FSO Emoji folder to a safe location on your computer.
 3. In Chrome, visit [chrome://extensions](chrome://extensions).
 4. At the top, enable the developer mode checkbox.
 5. Below, choose the load unpacked extension option.
-6. Navigate to the FSO Tools folder and select.
-7. Open FSO in Chrome to see the applied changes. Press the FSO tools icon next to the address bar to enable dark mode.
+6. Navigate to the FSO Emoji folder and select.
+7. Open FSO in Chrome to see the applied changes.
 
 ## Troubleshooting & support
-I am providing this extension as-is without support with no guarantee it will work as intended for all users, but in hopes to help
-those wanting an improved FSO experience.
+I am providing this extension as-is without support with no guarantee it will work as intended for all users, but in hopes to help those wanting an improved FSO experience.
 
 I may update this plugin if I find any changes necessary, if you find any glaring issues or things missing, please contact me or file an issue.
 
-This version was designed for the student version of FSO. As I am aware the date highlights and module grouping should work on the faculty side,
-but I'm certain there may be issues with the dark mode experience.
+This version was designed for the student version of FSO.
 
 Also, I am in no way affiliated with the creation of FSO, and this is not intended to be a bash on it either. Just a happy Full Sail Student.
 
 Enjoy.
 
-## Screenshots
-**Before**
-![Before](http://i.imgur.com/76cTk7D.png)
-
-**Using FSO Tools**
-![After](http://i.imgur.com/RdLp0U5.png)
-
-**Using FSO Tools - Dark Mode**
-![After - Dark Mode](http://i.imgur.com/FoUqIHH.png)
+## Screenshot
+![Before](https://i.imgur.com/Q7GYBJ3.png)

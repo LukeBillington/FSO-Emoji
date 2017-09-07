@@ -1,47 +1,46 @@
 var run = setInterval(findModules, 100);
-var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
-  "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
-];
-var dLong = new Date();
-var dMonth = monthNames[dLong.getMonth()];
-var date = `${dMonth} ${dLong.getDate()}`;
 
 function findModules() {
 
-  // Module Due Date Highlight
-  var dateLocation = document.querySelectorAll('.card--primary .card__column-metadata .card__meta:nth-of-type(3) .card__meta-value');
-  for (var i = 0; i < dateLocation.length; i++) {
-    var pCard = dateLocation[i].parentElement.parentElement.parentElement;
-    var pSrc = dateLocation[i].innerText.toUpperCase();
-    var pData = pSrc.split(" @ ");
-    console.log(pData);
-    var pDate = pData[0];
-    var pTime = pData[1];
-    if(pDate == date) {
-      pCard.classList.add('highlight');
+  // Finished Assignment
+  var graded = document.querySelectorAll('.circle-progress--smaller-text');
+  for (var k = 0; k < graded.length; k++) {
+    if(graded[k].innerText >= 0 && graded[k].innerText <= 69) {
+      graded[k].style.backgroundColor = "#FF8A80";
+      graded[k].style.border = "5px solid #FF1744";
+      graded[k].style.fontSize = "2rem";
+      graded[k].innerText = '💩';
     }
-  }
-
-  // Assignment Due Date Highlight
-  var dateSubLocation = document.querySelectorAll('.card--secondary .card__column-metadata .card__meta:nth-of-type(3) .card__meta-value');
-  for (var j = 0; j < dateSubLocation.length; j++) {
-    var vSubCard = dateSubLocation[j].parentElement.parentElement.parentElement;
-    var vSubSrc = dateSubLocation[j].innerText.toUpperCase();
-    var vSubData = vSubSrc.split(" @ ");
-    console.log(vSubData);
-    var vSubDate = vSubData[0];
-    var vSubTime = vSubData[1];
-    if(vSubDate == date) {
-      vSubCard.classList.add('highlight');
+    else if(graded[k].innerText >= 70 && graded[k].innerText <= 72) {
+      graded[k].style.backgroundColor = "#FFD180";
+      graded[k].style.border = "5px solid #FF9100";
+      graded[k].style.fontSize = "2rem";
+      graded[k].innerText = '😕';
     }
+    else if(graded[k].innerText >= 73 && graded[k].innerText <= 79) {
+      graded[k].style.backgroundColor = "#80D8FF";
+      graded[k].style.border = "5px solid #00B0FF";
+      graded[k].style.fontSize = "2rem";
+      graded[k].innerText = '😐';
+    }
+    else if(graded[k].innerText >= 80 && graded[k].innerText <= 89) {
+      graded[k].style.backgroundColor = "#A7FFEB";
+      graded[k].style.border = "5px solid #1DE9B6";
+      graded[k].style.fontSize = "2rem";
+      graded[k].innerText = '🙂';
+    }
+    else if(graded[k].innerText >= 90 && graded[k].innerText <= 99) {
+      graded[k].style.backgroundColor = "#B9F6CA";
+      graded[k].style.border = "5px solid #00E676";
+      graded[k].style.fontSize = "2rem";
+      graded[k].innerText = '😄';
+    }
+    else if(graded[k].innerText == 100) {
+      graded[k].style.backgroundColor = "#B388FF";
+      graded[k].style.border = "5px solid #651FFF";
+      graded[k].style.fontSize = "2rem";
+      graded[k].innerText = '💯';
+    }
+    console.log(graded[k].innerText);
   }
-
-  // Unlocked Assignment
-  var unlocked = document.querySelectorAll('.circle-progress:not(.circle-progress--completed) i.fa-check');
-  for (var k = 0; k < unlocked.length; k++) {
-    var icon = unlocked[k];
-    icon.classList.remove('fa-check');
-    icon.classList.add('fa-unlock');
-  }
-
 }
